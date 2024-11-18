@@ -1,388 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrar"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:textColor="#000" />
+
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp">
+
+        <ImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="Profile Icon"
+            android:scaleType="centerInside"
+            android:src="@drawable/userlogo" />
+
+        <ImageView
+            android:id="@+id/ivCamera"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="4dp"
+            android:contentDescription="Camera Icon"
+            android:padding="4dp" />
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/etEmail"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-26dp">
-
-        <LinearLayout
-            android:id="@+id/nameinfo"
-            android:layout_width="409dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:orientation="horizontal"
-            android:padding="30dp"
-            android:textAlignment="center">
-
-            <TextView
-                android:id="@+id/greetings"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ola, Atleta!"
-                android:textAlignment="center" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="                                        22 anos, basquete" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/textbeforetable"
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:layout_weight="1"
-                android:padding="0dp"
-                android:text="Veja como anda sua rotina de treinos individual"
-                android:textAlignment="center" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TableLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="86dp"
-                    android:layout_marginTop="8dp"
-                    android:padding="16dp">
-
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="#B95555">
-
-                        <TextView
-                            android:id="@+id/textView3"
-                            android:layout_width="75dp"
-                            android:layout_height="wrap_content"
-                            android:text="Seg"
-                            android:textAlignment="center"
-                            android:textColor="#FFFFFF" />
-
-                        <TextView
-                            android:id="@+id/textView4"
-                            android:layout_width="72dp"
-                            android:layout_height="wrap_content"
-                            android:text="Ter"
-                            android:textAlignment="center"
-                            android:textColor="#FFFFFF" />
-
-                        <TextView
-                            android:id="@+id/textView5"
-                            android:layout_width="86dp"
-                            android:layout_height="wrap_content"
-                            android:text="Qua"
-                            android:textAlignment="center"
-                            android:textColor="#FFFFFF" />
-
-                        <TextView
-                            android:id="@+id/textView6"
-                            android:layout_width="59dp"
-                            android:layout_height="wrap_content"
-                            android:text="Qui"
-                            android:textAlignment="center"
-                            android:textColor="#FFFFFF" />
-
-                        <TextView
-                            android:id="@+id/textView7"
-                            android:layout_width="85dp"
-                            android:layout_height="wrap_content"
-                            android:text="Sex"
-                            android:textAlignment="center"
-                            android:textColor="#FFFFFF" />
-                    </TableRow>
-
-                    <TableRow
-                        android:id="@+id/back"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="#E8E8EC">
-
-                        <CheckBox
-                            android:id="@+id/checkBox"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
-
-                        <CheckBox
-                            android:id="@+id/checkBox2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
-
-                        <CheckBox
-                            android:id="@+id/checkBox3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
-
-                        <CheckBox
-                            android:id="@+id/checkBox4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
-
-                        <CheckBox
-                            android:id="@+id/checkBox5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
-                    </TableRow>
-
-                </TableLayout>
-
-                <TextView
-                    android:id="@+id/textView8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="20dp"
-                    android:text="visualizar histórico"
-                    android:textAlignment="textEnd"
-                    android:textColor="#3599C7"
-                    android:textStyle="bold" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"></LinearLayout>
-
-            </LinearLayout>
-
-            <TableLayout
-                android:layout_width="match_parent"
-                android:layout_height="125dp"
-                android:layout_marginTop="8dp"
-                android:padding="16dp">
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="#B95555">
-
-                    <TextView
-                        android:id="@+id/textView3"
-                        android:layout_width="75dp"
-                        android:layout_height="wrap_content"
-                        android:text="Seg"
-                        android:textAlignment="center"
-                        android:textColor="#FFFFFF" />
-
-                    <TextView
-                        android:id="@+id/textView4"
-                        android:layout_width="72dp"
-                        android:layout_height="wrap_content"
-                        android:text="Ter"
-                        android:textAlignment="center"
-                        android:textColor="#FFFFFF" />
-
-                    <TextView
-                        android:id="@+id/textView5"
-                        android:layout_width="86dp"
-                        android:layout_height="wrap_content"
-                        android:text="Qua"
-                        android:textAlignment="center"
-                        android:textColor="#FFFFFF" />
-
-                    <TextView
-                        android:id="@+id/textView6"
-                        android:layout_width="59dp"
-                        android:layout_height="wrap_content"
-                        android:text="Qui"
-                        android:textAlignment="center"
-                        android:textColor="#FFFFFF" />
-
-                    <TextView
-                        android:id="@+id/textView7"
-                        android:layout_width="85dp"
-                        android:layout_height="wrap_content"
-                        android:text="Sex"
-                        android:textAlignment="center"
-                        android:textColor="#FFFFFF" />
-                </TableRow>
-
-                <TableRow
-                    android:id="@+id/back"
-                    android:layout_width="match_parent"
-                    android:layout_height="77dp"
-                    android:background="#E8E8EC">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="70dp"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/textView10"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="19:00"
-                            android:textAlignment="center" />
-
-                        <TextView
-                            android:id="@+id/textView11"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="agendar"
-                            android:textAlignment="center" />
-
-                        <CheckBox
-                            android:id="@+id/checkBox"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/textView10"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textAlignment="center" />
-
-                        <TextView
-                            android:id="@+id/textView11"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="..."
-                            android:textAlignment="center" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="70dp"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/textView10"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="20:00"
-                            android:textAlignment="center" />
-
-                        <TextView
-                            android:id="@+id/textView11"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="agendar"
-                            android:textAlignment="center" />
-
-                        <CheckBox
-                            android:id="@+id/checkBox"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/textView10"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textAlignment="center" />
-
-                        <TextView
-                            android:id="@+id/textView11"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="..."
-                            android:textAlignment="center" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/textView10"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textAlignment="center" />
-
-                        <TextView
-                            android:id="@+id/textView11"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="..."
-                            android:textAlignment="center" />
-
-                    </LinearLayout>
-
-                </TableRow>
-
-            </TableLayout>
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="20dp"
-                android:text="visualizar histórico"
-                android:textAlignment="textEnd"
-                android:textColor="#3599C7"
-                android:textStyle="bold" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="346dp"
-            android:layout_marginTop="120dp"
-            android:orientation="vertical"
-            android:padding="30dp">
-
-            <Button
-                android:id="@+id/performance"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:height="72dp"
-                android:background="#B95555"
-                android:text="Acessar seu monitoramento de desempenho"
-                android:theme="@null"
-                app:backgroundTint="@null"
-                app:cornerRadius="8dp" />
-
-            <Button
-                android:id="@+id/events"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:height="72dp"
-                android:background="#B95555"
-                android:text="Calendário de eventos"
-                android:theme="@null"
-                app:backgroundTint="@null"
-                app:cornerRadius="8dp" />
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_height="wrap_content"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:theme="@null"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:background="#B95555"
+        android:theme="@null"
+        app:backgroundTint="@null"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inscrever-se"
+        android:background="#B95555"
+        android:theme="@null"
+        app:backgroundTint="@null"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Esqueceu a senha?"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:gravity="center" />
+
+</LinearLayout>

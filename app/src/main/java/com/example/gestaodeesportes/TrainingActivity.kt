@@ -19,7 +19,7 @@ class TrainingActivity : AppCompatActivity() {
         val thirdrow = findViewById<View>(R.id.thirdrow)
 
         backToHome.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, Home::class.java)
             startActivity(intent)
         }
 

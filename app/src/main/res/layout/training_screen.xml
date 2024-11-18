@@ -63,7 +63,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:paddingEnd="20dp"
-                        android:text="indivual"
+                        android:text="individual"
                         android:textAlignment="textEnd" />
 
 
