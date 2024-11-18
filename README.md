@@ -66,5 +66,41 @@ Abas utilizadas para organizar seções específicas dentro de uma mesma funcion
     -   **TabLayout** para navegação entre os conteúdos de Monitoramento de Desempenho.
 3.  **Uso do Kotlin e Android Studio**: O app deve ser desenvolvido em Kotlin com o Android Studio como IDE.
 
+   ## Novas Funcionalidades Implementadas
+
+### Verificação de Email e Senha
+
+A funcionalidade de login foi adicionada para garantir a segurança dos dados do usuário. A verificação é feita tanto no formato quanto na correspondência das credenciais.
+
+- **Descrição**:
+  - O usuário insere o email e a senha na tela de login.
+  - A verificação confirma se o formato do email é válido (ex.: `nome@email.com`).
+
+- **Feedback ao Usuário**:
+  - Sucesso no login: Redireciona para a Tela Inicial.
+  - Erro no login: Mensagem de erro e vibração longa para alertar o usuário.
+
+---
+
+### Integração com a Galeria
+
+Agora, o aplicativo permite o upload de imagens diretamente da galeria para personalizar o perfil do atleta.
+
+- **Descrição**:
+  - Botão **Selecionar Foto** na tela de perfil.
+  - Acesso à galeria do dispositivo para escolher uma imagem.
+  - Pré-visualização da foto selecionada antes de salvar.
+
+
+
+### Vibração para Feedback Tátil
+
+O aplicativo utiliza a funcionalidade de vibração para melhorar a experiência do usuário, oferecendo feedback em interações importantes.
+
+- **Casos de Uso**:
+  - Caso o usuário errar o e-mail ou senha, o celular irá vibrar.
+
+
+
 ## Protótipo de Layout
 <a href="https://www.figma.com/design/x6NTtv21fr6z9CyzqJU0TE/prot%C3%B3tipo?t=eKkxvVqO9jgbrQj9-1">Link para o Figma!</a>
